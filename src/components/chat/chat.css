@@ -3,6 +3,8 @@
   border-left: 1px solid #eeedeb;
   border-right: 1px solid #eeedeb;
   height: 100%;
+  display:flex;
+  flex-direction:column;
 
   .top {
     padding: 20px;
@@ -53,6 +55,8 @@
   }
 
   .center {
+    padding: 20px;
+    flex: 1;
   }
   .bottom {
     padding: 20px;
@@ -60,18 +64,50 @@
     align-items: center;
     justify-content: space-between;
     border-top: 1px solid #eeedeb;
+    gap: 20px;
+    magin-top: auto;
 
     .icons {
       display: flex;
       gap: 20px;
+    }
+    img {
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+    }
+    input {
+      flex: 1;
+      background-color: rgba(188, 159, 139, 0.75);
+      border: none;
+      outline: none;
+      color: white;
+      padding: 15px;
+      border-radius: 10px;
+      font-size: 15px;
 
-      img {
-        width: 20px;
-        height: 20px;
-        cursor: pointer;
+      &::placeholder {
+        color: white;
       }
     }
 
-      
+    .emoji {
+      position: relative;
+
+      .picker {
+        position: absolute;
+        bottom: 50px;
+        left: 0;
+      }
+    }
+
+    .sendButton {
+      background-color: #dfd3c3;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+    }
   }
 }
