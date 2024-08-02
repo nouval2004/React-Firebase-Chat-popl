@@ -29,7 +29,33 @@ const Chat = () => {
         </div>
       </div>
       <div className="center">
-        
+        <div className="message">
+          <img src="./avatar.png" alt="" />
+          <div className="texts">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <span>1 min ago</span>
+          </div>
+        </div>
+        <div className="message own">
+          <div className="texts">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <span>1 min ago</span>
+          </div>
+        </div>
+        <div className="message">
+          <img src="./avatar.png" alt="" />
+          <div className="texts">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <span>1 min ago</span>
+          </div>
+        </div>
+        <div className="message own">
+          <div className="texts">
+            <img src="./gambar-tes.jpg" alt="" />
+            <p>Lorem ipsum dolor sit amet.</p>
+            <span>1 min ago</span>
+          </div>
+        </div>
       </div>
       <div className="bottom">
         <div className="icons">
