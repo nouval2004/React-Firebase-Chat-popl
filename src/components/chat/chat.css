@@ -3,8 +3,8 @@
   border-left: 1px solid #eeedeb;
   border-right: 1px solid #eeedeb;
   height: 100%;
-  display:flex;
-  flex-direction:column;
+  display: flex;
+  flex-direction: column;
 
   .top {
     padding: 20px;
@@ -36,7 +36,7 @@
         }
 
         p {
-          font=size: 14px;
+          font-size: 14px; /* Corrected from font=size */
           font-weight: 300;
           color: #dfd3c3;
         }
@@ -60,19 +60,37 @@
     overflow: scroll;
     display: flex;
     flex-direction: column;
-    gaap: 20px;
+    gap: 20px;
 
-    .message{
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: rgba(188, 159, 139, 0.75); /* Warna track */
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #5a3e36; /* Warna thumb */
+      border-radius: 10px;
+      border: 3px solid rgba(188, 159, 139, 0.75); /* Optional: untuk border dan padding pada thumb */
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: #3e2a24; /* Warna thumb saat hover */
+    }
+
+    .message {
       max-width: 70%;
       display: flex;
-      gap 20px;
+      gap: 20px; /* Corrected from gap 20px */
 
-      &.own{
+      &.own {
         align-self: flex-end;
 
-        .texts{
-          p{
-            background-color: #DEAC80;
+        .texts {
+          p {
+            background-color: #deac80;
           }
         }
       }
@@ -84,32 +102,33 @@
         object-fit: cover;
         margin-right: 10px;
       }
+
       .texts {
         flex: 1;
         display: flex;
         flex-direction: column;
         gap: 5px;
 
-        img{
+        img {
           width: 300px;
           height: 300px;
           border-radius: 10px;
           object-fit: cover;
         }
 
-        p{
+        p {
           padding: 20px;
           background-color: rgba(188, 159, 139, 0.6);
           border-radius: 10px;
         }
 
-        span{
+        span {
           font-size: 13px;
-          margin-bottom: 10px;
         }
       }
     }
   }
+
   .bottom {
     padding: 20px;
     display: flex;
@@ -117,17 +136,19 @@
     justify-content: space-between;
     border-top: 1px solid #eeedeb;
     gap: 20px;
-    magin-top: auto;
+    margin-top: auto; /* Corrected from magin-top */
 
     .icons {
       display: flex;
       gap: 20px;
     }
+
     img {
       width: 20px;
       height: 20px;
       cursor: pointer;
     }
+
     input {
       flex: 1;
       background-color: rgba(188, 159, 139, 0.75);

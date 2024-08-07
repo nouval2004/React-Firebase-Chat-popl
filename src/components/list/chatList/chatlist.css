@@ -20,13 +20,7 @@
     background-color: #3e2a24; /* Warna thumb saat hover */
   }
 
-  scrollbar-width: thin;
-  scrollbar-color: #5a3e36 rgba(188, 159, 139, 0.75); /* thumb color, track color */
-  .search {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
+
 
     .searchBar {
       flex: 1;
