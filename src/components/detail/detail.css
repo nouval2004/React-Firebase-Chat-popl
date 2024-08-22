@@ -80,6 +80,7 @@
         }
       }
     }
+
     button {
       padding: 15px;
       background-color: rgba(230, 74, 105, 0.553);
@@ -88,14 +89,22 @@
       border-radius: 5px;
       cursor: pointer;
 
-      &:hover{
+      &:hover {
         background-color: rgba(220, 20, 60, 0.796);
       }
+    }
 
-      &.logout{
-        padding:10px;
-        background: #1a73e8 
+    button.logout {
+      padding: 10px;
+      background: #1a73e8;
+      color: white;
+      border-radius: 5px;
+
+      &:hover {
+        background: #0b54a8;
+        /* Warna saat hover untuk tombol logout */
       }
     }
+
   }
 }
