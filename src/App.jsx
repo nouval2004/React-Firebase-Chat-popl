@@ -16,13 +16,16 @@ const App = () => {
 
   useEffect(() => {
     const unSub = onAuthStateChanged(auth, (user) => {
-      fetchUserInfo(user.uid)
-    })
-
+      if (user) {
+        fetchUserInfo(user.uid);
+      }
+    });
+  
     return () => {
-      unSub()
-    }
-  }, [fetchUserInfo])
+      unSub();
+    };
+  }, [fetchUserInfo]);
+  
 
   console.log(currentUser)
 

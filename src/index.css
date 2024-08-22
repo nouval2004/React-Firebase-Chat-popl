@@ -7,14 +7,16 @@
 }
 
 body {
-  background-image: url("/walpaper.jpeg");
+  background-image: url("/backgorund.jpg");
+  background-size: cover;
+  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
+  margin: 0; 
   color: white;
 }
-
 .container {
   width: 80vw;
   height: 90vh;
